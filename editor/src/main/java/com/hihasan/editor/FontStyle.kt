@@ -111,7 +111,7 @@ class FontStyle {
                     ActionType.NONE
                 }
             }
-            return type
+            return type.toString()
         }
     val isAnchor = false
     val range: RangeBean? = null

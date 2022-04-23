@@ -38,8 +38,7 @@ abstract class RichEditorCallback {
                 .equals(fontStyle.fontFamily)
         ) {
             if (!TextUtils.isEmpty(fontStyle.fontFamily)) {
-                val font: String = fontStyle.fontFamily.split(",").get(0).replace("\"", "")
-                notifyFontStyleChange(ActionType.FAMILY, font)
+//                val font: String = (fontStyle.fontFamily?.split(",")?.get(0)?.replace("\"", "") ?: notifyFontStyleChange(ActionType.FAMILY, font)) as String
             }
         }
         if (mFontStyle.fontForeColor == null || !mFontStyle.fontForeColor
@@ -65,7 +64,7 @@ abstract class RichEditorCallback {
             val size = mTextAlignGroup.size
             while (i < size) {
                 val type = mTextAlignGroup[i]
-                notifyFontStyleChange(type, (type === fontStyle.textAlign).toString())
+                notifyFontStyleChange(type, fontStyle.textAlign.toString())
                 i++
             }
         }
@@ -87,20 +86,20 @@ abstract class RichEditorCallback {
             notifyFontStyleChange(ActionType.SUBSCRIPT,
                 java.lang.String.valueOf(fontStyle.isSubscript))
         }
-        if (mFontStyle.isSuperscript !== fontStyle.isSuperscript()) {
+        if (mFontStyle.isSuperscript !== fontStyle.isSuperscript) {
             notifyFontStyleChange(ActionType.SUPERSCRIPT,
                 java.lang.String.valueOf(fontStyle.isSuperscript))
         }
-        if (mFontStyle.isStrikethrough !== fontStyle.isStrikethrough()) {
+        if (mFontStyle.isStrikethrough !== fontStyle.isStrikethrough) {
             notifyFontStyleChange(ActionType.STRIKETHROUGH,
-                java.lang.String.valueOf(fontStyle.isStrikethrough()))
+                java.lang.String.valueOf(fontStyle.isStrikethrough))
         }
         if (mFontStyle.fontBlock!== fontStyle.fontBlock) {
             var i = 0
             val size = mFontBlockGroup.size
             while (i < size) {
                 val type = mFontBlockGroup[i]
-                notifyFontStyleChange(type, (type === fontStyle.fontBlock).toString())
+                notifyFontStyleChange(type, fontStyle.fontBlock.toString())
                 i++
             }
         }
@@ -109,7 +108,7 @@ abstract class RichEditorCallback {
             val size = mListStyleGroup.size
             while (i < size) {
                 val type = mListStyleGroup[i]
-                notifyFontStyleChange(type, (type === fontStyle.listStyle).toString())
+                notifyFontStyleChange(type, fontStyle.listStyle.toString())
                 i++
             }
         }
