@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import com.hihasan.richtexteditor.R
+import com.hihasan.richtexteditor.databinding.ViewColorPaletteBinding
 import java.util.*
 
 class ColorPaletteView @JvmOverloads constructor(
@@ -17,7 +18,7 @@ class ColorPaletteView @JvmOverloads constructor(
     defStyleAttr: Int = 0,
 ) : LinearLayout(context, attrs, defStyleAttr) {
 
-    lateinit var binding : viewColorPaletteBinding
+    lateinit var binding : ViewColorPaletteBinding
 //    @BindView(R.id.ll_color_container)
 //    var llColorContainer: LinearLayout? = null
     var selectedColor: String? = null
@@ -58,7 +59,7 @@ class ColorPaletteView @JvmOverloads constructor(
                     mOnColorChangeListener!!.onColorChange(roundView.getBackgroundColor())
                 }
             }
-            llColorContainer!!.addView(roundView)
+            binding.llColorContainer!!.addView(roundView)
             i++
         }
     }
@@ -71,15 +72,15 @@ class ColorPaletteView @JvmOverloads constructor(
         selectedColor = selectedColor.uppercase(Locale.getDefault())
         if (!TextUtils.isEmpty(this.selectedColor)) {
             val currentSelectedView: RoundView =
-                llColorContainer!!.findViewWithTag(this.selectedColor)
+                binding.llColorContainer!!.findViewWithTag(this.selectedColor)
             if (currentSelectedView != null) {
                 currentSelectedView.isSelected =
                     this.selectedColor.equals(selectedColor, ignoreCase = true)
             }
         }
         this.selectedColor = selectedColor
-        if (llColorContainer!!.findViewWithTag<View?>(selectedColor) != null) {
-            llColorContainer!!.findViewWithTag<View>(selectedColor).isSelected = true
+        if (binding.llColorContainer!!.findViewWithTag<View?>(selectedColor) != null) {
+            binding.llColorContainer!!.findViewWithTag<View>(selectedColor).isSelected = true
         }
     }
 
