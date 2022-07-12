@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.29074074074074074" />
+        <entry key="app/src/main/res/drawable/btn_colored_material.xml" value="0.157" />
+        <entry key="app/src/main/res/drawable/round_rectangle_blue.xml" value="0.157" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.140625" />
       </map>
     </option>
   </component>
