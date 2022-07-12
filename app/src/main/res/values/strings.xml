@@ -1,12 +1,24 @@
 <resources>
     <string name="app_name">RichText Editor</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="font_size">Size</string>
+    <string name="font_color">Text Color</string>
+    <string name="font_spacing">Exact Spacing</string>
+    <string name="font_none">none</string>
+    <string name="font_highlight_color">Highlight</string>
+    <string name="font_default_text">AaBbCcDd</string>
+    <string name="font_style_normal">Normal</string>
+    <string name="font_style_heading_1">Heading 1</string>
+    <string name="font_style_heading_2">Heading 2</string>
+    <string name="font_style_heading_3">Heading 3</string>
+    <string name="font_insert">Insert</string>
+    <string name="edit_hyperlink">Edit Hyperlink</string>
+    <string name="address">Address:</string>
+    <string name="text_to_display">Text to display:</string>
+    <string name="ok">OK</string>
+    <string name="edit_table">Edit Table</string>
+    <string name="heading_4">Heading 4</string>
+    <string name="heading_5">Heading 5</string>
+    <string name="heading_6">Heading 6</string>
+    <string name="m_rich_editor">MRichEditor</string>
 </resources>
