@@ -7,6 +7,14 @@
         <entry key="app/src/main/res/drawable/btn_colored_material.xml" value="0.157" />
         <entry key="app/src/main/res/drawable/round_rectangle_blue.xml" value="0.157" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_start.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/fragment_edit_hyperlink.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/fragment_edit_table.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/fragment_editor_menu.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/fragment_font_setting.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/item_font_setting.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/popupwindow.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/view_color_palette.xml" value="0.2953125" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.140625" />
       </map>
     </option>
