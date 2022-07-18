@@ -59,9 +59,8 @@
             android:background="@drawable/btn_white_round_rectangle"
             android:gravity="center"
             android:textColor="@color/textPrimary"
-            android:textSize="@dimen/text_large"
-            tools:text="宋体"
-            />
+            android:textSize="16sp"
+            tools:text="Font Name" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -138,8 +137,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:text="@string/font_color"
-          android:textSize="@dimen/text_micro"
-          />
+          android:textSize="14sp" />
 
       <LinearLayout
           android:layout_width="match_parent"
@@ -150,7 +148,7 @@
           android:orientation="horizontal"
           >
 
-        <com.even.sample.widget.ColorPaletteView
+        <com.hihasan.richtexteditor.widgets.ColorPaletteView
             android:id="@+id/cpv_font_text_color"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,8 +162,7 @@
           android:layout_height="wrap_content"
           android:layout_marginTop="16dp"
           android:text="@string/font_highlight_color"
-          android:textSize="@dimen/text_micro"
-          />
+          android:textSize="14sp" />
 
       <LinearLayout
           android:layout_width="match_parent"
@@ -175,15 +172,14 @@
           android:orientation="horizontal"
           >
 
-        <com.even.sample.widget.ColorPaletteView
+        <com.hihasan.richtexteditor.widgets.ColorPaletteView
             android:id="@+id/cpv_highlight_color"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/round_rectangle_white"
             android:gravity="center"
-            android:orientation="horizontal"
-            />
+            android:orientation="horizontal" />
 
       </LinearLayout>
 
@@ -215,8 +211,7 @@
             android:paddingRight="16dp"
             android:paddingStart="16dp"
             android:text="@string/font_spacing"
-            android:textSize="@dimen/text_micro"
-            />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_font_spacing"
@@ -224,9 +219,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textColor="@color/light_blue_500"
-            android:textSize="@dimen/text_large"
-            tools:text="16"
-            />
+            android:textSize="16sp"
+            tools:text="16" />
 
       </LinearLayout>
 
@@ -297,8 +291,7 @@
           android:layout_marginTop="8dp"
           android:background="@color/white"
           android:orientation="horizontal"
-          android:padding="16dp"
-          >
+          android:padding="16dp">
 
         <LinearLayout
             android:id="@+id/ll_normal"
@@ -307,8 +300,7 @@
             android:background="@drawable/round_rectangle_white"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="8dp"
-            >
+            android:paddingBottom="8dp">
 
           <TextView
               android:layout_width="wrap_content"
@@ -316,22 +308,19 @@
               android:gravity="center"
               android:maxLines="1"
               android:text="@string/font_default_text"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
           <View
               android:layout_width="match_parent"
               android:layout_height="0.5dp"
               android:layout_marginBottom="4dp"
-              android:background="#e0e0e0"
-              />
+              android:background="#e0e0e0" />
 
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/font_style_normal"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -344,8 +333,7 @@
             android:background="@drawable/round_rectangle_white"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="8dp"
-            >
+            android:paddingBottom="8dp">
 
           <TextView
               android:layout_width="wrap_content"
@@ -353,8 +341,7 @@
               android:gravity="center"
               android:maxLines="1"
               android:text="AaBb"
-              android:textSize="@dimen/text_large"
-              />
+              android:textSize="16sp" />
 
           <View
               android:layout_width="match_parent"
@@ -367,8 +354,7 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/font_style_heading_1"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -390,23 +376,19 @@
               android:gravity="center"
               android:maxLines="1"
               android:text="AaBbC"
-              android:textSize="@dimen/text_medium"
-              />
+              android:textSize="15sp" />
 
           <View
               android:layout_width="match_parent"
               android:layout_height="0.5dp"
               android:layout_marginBottom="4dp"
-
-              android:background="#e0e0e0"
-              />
+              android:background="#e0e0e0" />
 
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/font_style_heading_2"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -429,22 +411,19 @@
               android:gravity="center"
               android:maxLines="1"
               android:text="AaBbCcD"
-              android:textSize="@dimen/text_small"
-              />
+              android:textSize="14sp" />
 
           <View
               android:layout_width="match_parent"
               android:layout_height="0.5dp"
               android:layout_marginBottom="4dp"
-              android:background="#e0e0e0"
-              />
+              android:background="#e0e0e0" />
 
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/font_style_heading_3"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -457,9 +436,7 @@
             android:background="@drawable/round_rectangle_white"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="8dp"
-
-            >
+            android:paddingBottom="8dp">
 
           <TextView
               android:layout_width="wrap_content"
@@ -467,8 +444,7 @@
               android:gravity="center"
               android:maxLines="1"
               android:text="AaBbCcDd"
-              android:textSize="@dimen/text_small"
-              />
+              android:textSize="14sp" />
 
           <View
               android:layout_width="match_parent"
@@ -481,8 +457,7 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/heading_4"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -495,9 +470,7 @@
             android:background="@drawable/round_rectangle_white"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="8dp"
-
-            >
+            android:paddingBottom="8dp">
 
           <TextView
               android:layout_width="wrap_content"
@@ -505,8 +478,7 @@
               android:gravity="center"
               android:maxLines="1"
               android:text="AaBbCcDd"
-              android:textSize="@dimen/text_small"
-              />
+              android:textSize="14sp" />
 
           <View
               android:layout_width="match_parent"
@@ -519,8 +491,7 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/heading_5"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -533,9 +504,7 @@
             android:background="@drawable/round_rectangle_white"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingBottom="8dp"
-
-            >
+            android:paddingBottom="8dp">
 
           <TextView
               android:layout_width="wrap_content"
@@ -543,22 +512,19 @@
               android:gravity="center"
               android:maxLines="1"
               android:text="AaBbCcDd"
-              android:textSize="@dimen/text_small"
-              />
+              android:textSize="14sp" />
 
           <View
               android:layout_width="match_parent"
               android:layout_height="0.5dp"
               android:layout_marginBottom="4dp"
-              android:background="#e0e0e0"
-              />
+              android:background="#e0e0e0" />
 
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/heading_6"
-              android:textSize="@dimen/text_micro"
-              />
+              android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -583,16 +549,14 @@
           android:gravity="center"
           android:orientation="horizontal"
           android:paddingBottom="8dp"
-          android:paddingTop="8dp"
-          >
+          android:paddingTop="8dp">
 
         <ImageView
             android:id="@+id/iv_action_indent"
             android:background="@drawable/btn_white_material"
             android:padding="10dp"
             android:src="@drawable/ic_format_indent_increase"
-            style="@style/ActionImageView"
-            />
+            style="@style/ActionImageView" />
 
         <ImageView
             android:id="@+id/iv_action_outdent"
@@ -601,8 +565,7 @@
             android:background="@drawable/btn_white_material"
             android:padding="10dp"
             android:src="@drawable/ic_format_indent_decrease"
-            style="@style/ActionImageView"
-            />
+            style="@style/ActionImageView" />
 
       </LinearLayout>
 
@@ -617,16 +580,14 @@
           android:gravity="center"
           android:orientation="horizontal"
           android:paddingBottom="8dp"
-          android:paddingTop="8dp"
-          >
+          android:paddingTop="8dp">
 
         <ImageView
             android:id="@+id/iv_action_insert_bullets"
             android:background="@drawable/btn_white_material"
             android:padding="8dp"
             android:src="@drawable/ic_format_list_bulleted"
-            style="@style/ActionImageView"
-            />
+            style="@style/ActionImageView" />
 
         <ImageView
             android:id="@+id/iv_action_insert_numbers"
@@ -635,8 +596,7 @@
             android:background="@drawable/btn_white_material"
             android:padding="8dp"
             android:src="@drawable/ic_format_list_numbered"
-            style="@style/ActionImageView"
-            />
+            style="@style/ActionImageView" />
 
       </LinearLayout>
 
@@ -648,8 +608,7 @@
         android:layout_marginTop="8dp"
         android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="16dp"
-        >
+        android:padding="16dp">
 
       <LinearLayout
           android:layout_width="0dp"
@@ -659,16 +618,14 @@
           android:gravity="center"
           android:orientation="horizontal"
           android:paddingBottom="8dp"
-          android:paddingTop="8dp"
-          >
+          android:paddingTop="8dp">
 
         <ImageView
             android:id="@+id/iv_action_subscript"
             android:background="@drawable/btn_white_material"
             android:padding="8dp"
             android:src="@drawable/ic_format_subscript"
-            style="@style/ActionImageView"
-            />
+            style="@style/ActionImageView" />
 
         <ImageView
             android:id="@+id/iv_action_superscript"
@@ -731,8 +688,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:text="@string/font_insert"
-          android:textSize="@dimen/text_micro"
-          />
+          android:textSize="14sp" />
 
       <LinearLayout
           android:layout_width="match_parent"
@@ -741,8 +697,7 @@
           android:background="@drawable/round_rectangle_white"
           android:gravity="center"
           android:orientation="horizontal"
-          android:padding="8dp"
-          >
+          android:padding="8dp">
 
         <ImageView
             android:id="@+id/iv_action_insert_image"

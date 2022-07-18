@@ -11,7 +11,7 @@ import android.widget.LinearLayout
 import com.hihasan.richtexteditor.R
 import com.hihasan.richtexteditor.databinding.ViewColorPaletteBinding
 import java.util.*
-
+//TODO : Need to work on here
 class ColorPaletteView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
@@ -79,8 +79,8 @@ class ColorPaletteView @JvmOverloads constructor(
             }
         }
         this.selectedColor = selectedColor
-        if (binding.llColorContainer!!.findViewWithTag<View?>(selectedColor) != null) {
-            binding.llColorContainer!!.findViewWithTag<View>(selectedColor).isSelected = true
+        if (binding.llColorContainer.findViewWithTag<View?>(selectedColor) != null) {
+            binding.llColorContainer.findViewWithTag<View>(selectedColor).isSelected = true
         }
     }
 
