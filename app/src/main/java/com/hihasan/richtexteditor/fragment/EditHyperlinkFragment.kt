@@ -4,38 +4,40 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import androidx.fragment.app.Fragment
+import com.hihasan.richtexteditor.databinding.FragmentEditHyperlinkBinding
 
 class EditHyperlinkFragment : Fragment() {
-    @BindView(R.id.et_address)
-    var etAddress: EditText? = null
 
-    @BindView(R.id.et_display_text)
-    var etDisplayText: EditText? = null
+    private lateinit var binding : FragmentEditHyperlinkBinding
+
     private var mOnHyperlinkListener: OnHyperlinkListener? = null
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View? {
-        val rootView: View = inflater.inflate(R.layout.fragment_edit_hyperlink, null)
-        ButterKnife.bind(this, rootView)
-        return rootView
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?, ): View {
+        binding = FragmentEditHyperlinkBinding.inflate(inflater, container, false)
+
+        initViews()
+
+        return binding.root
     }
 
-    @OnClick(R.id.iv_back)
-    fun onClickBack() {
-        fragmentManager!!.beginTransaction().remove(this).commit()
-    }
+    private fun initViews() {
+        back()
 
-    @OnClick(R.id.btn_ok)
-    fun onClickOK() {
-        if (mOnHyperlinkListener != null) {
-            mOnHyperlinkListener!!.onHyperlinkOK(etAddress!!.text.toString(),
-                etDisplayText!!.text.toString())
-            onClickBack()
+        binding.btnOk.setOnClickListener{
+            if (mOnHyperlinkListener != null) {
+                mOnHyperlinkListener!!.onHyperlinkOK(binding.etAddress.text.toString(),
+                    binding.etDisplayText.text.toString())
+                back()
+            }
         }
     }
+
+    private fun back(){
+        binding.ivBack.setOnClickListener { childFragmentManager.beginTransaction().remove(this).commit() }
+    }
+
+
 
     fun setOnHyperlinkListener(mOnHyperlinkListener: OnHyperlinkListener?) {
         this.mOnHyperlinkListener = mOnHyperlinkListener
