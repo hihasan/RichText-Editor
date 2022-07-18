@@ -13,11 +13,10 @@ class EditTableFragment : Fragment() {
 
     @BindView(R.id.et_cols)
     var etCols: EditText? = null
+
     private var mOnTableListener: OnTableListener? = null
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?, ): View? {
         val rootView: View = inflater.inflate(R.layout.fragment_edit_table, null)
         ButterKnife.bind(this, rootView)
         return rootView

@@ -5,28 +5,33 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.hihasan.editor.ActionType
+import com.hihasan.richtexteditor.R
+import com.hihasan.richtexteditor.databinding.FragmentEditorMenuBinding
+import com.hihasan.richtexteditor.interfaces.OnActionPerformListener
 import java.util.regex.Pattern
 
 class EditorMenuFragment : Fragment() {
-    private var rootView: View? = null
 
-    @BindView(R.id.tv_font_size)
-    var tvFontSize: TextView? = null
+    private lateinit var binding : FragmentEditorMenuBinding
 
-    @BindView(R.id.tv_font_name)
-    var tvFontName: TextView? = null
+//    @BindView(R.id.tv_font_size)
+//    var tvFontSize: TextView? = null
+//
+//    @BindView(R.id.tv_font_name)
+//    var tvFontName: TextView? = null
+//
+//    @BindView(R.id.tv_font_spacing)
+//    var tvFontSpacing: TextView? = null
+//
+//    @BindView(R.id.cpv_font_text_color)
+//    var cpvFontTextColor: ColorPaletteView? = null
+//
+//    @BindView(R.id.cpv_highlight_color)
+//    var cpvHighlightColor: ColorPaletteView? = null
 
-    @BindView(R.id.tv_font_spacing)
-    var tvFontSpacing: TextView? = null
-
-    @BindView(R.id.cpv_font_text_color)
-    var cpvFontTextColor: ColorPaletteView? = null
-
-    @BindView(R.id.cpv_highlight_color)
-    var cpvHighlightColor: ColorPaletteView? = null
     private var mActionClickListener: OnActionPerformListener? = null
     private val mViewTypeMap: Map<Int, ActionType> = object : HashMap<Int?, ActionType?>() {
         init {
@@ -61,27 +66,25 @@ class EditorMenuFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View? {
-        rootView = inflater.inflate(R.layout.fragment_editor_menu, null)
-        ButterKnife.bind(this, rootView)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?, ): View? {
+        binding = FragmentEditorMenuBinding.inflate(inflater, container, false)
         initView()
-        return rootView
+        return binding.root
     }
 
     private fun initView() {
-        cpvFontTextColor.setOnColorChangeListener { color ->
+
+        binding.cpvFontTextColor.setOnColorChangeListener ( color ->
             if (mActionClickListener != null) {
                 mActionClickListener.onActionPerform(ActionType.FORE_COLOR, color)
             }
-        }
-        cpvHighlightColor.setOnColorChangeListener { color ->
+        )
+
+        binding.cpvHighlightColor.setOnColorChangeListener ( color ->
             if (mActionClickListener != null) {
                 mActionClickListener.onActionPerform(ActionType.BACK_COLOR, color)
             }
-        }
+        )
     }
 
     @OnClick(R.id.ll_font_size)
