@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:recyclerview-v7:25.1.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3a1bf99c79b055a23648dcad4f8ef228/transformed/recyclerview-v7-25.1.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3a1bf99c79b055a23648dcad4f8ef228/transformed/recyclerview-v7-25.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3a1bf99c79b055a23648dcad4f8ef228/transformed/recyclerview-v7-25.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3a1bf99c79b055a23648dcad4f8ef228/transformed/recyclerview-v7-25.1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/25.1.1/84e713a48e4aa2d0d3c3ee00df5b943ce522dcd0/recyclerview-v7-25.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/25.1.1/6d7c241edbf0f973d98e8fe8099b029a6ea5238f/recyclerview-v7-25.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
